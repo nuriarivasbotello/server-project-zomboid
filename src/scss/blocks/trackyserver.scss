@@ -1,0 +1,10 @@
+.trackyserver{
+    position: absolute;
+    bottom:50px;
+    left:330px;
+    &__info{
+        position: relative;
+        left:150px;
+        align-items: center;
+    }
+}
