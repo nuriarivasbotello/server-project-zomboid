@@ -11,6 +11,10 @@ display:none
     //bottom:780px;
 color:rgb(0, 0, 0);
 font-size: 18px;
+@include responsive(desktop) {
+    position: relative;
+}
+
 }
 .list{
     width: 600px;
