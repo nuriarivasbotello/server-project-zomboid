@@ -22,24 +22,24 @@
   <body>
     <head>
       <header class="header">
-        <img src="https://i.imgur.com/dN3CvBC.png" class="logo" alt="Logo"/>
+        <img id="logo"  src="https://i.imgur.com/dN3CvBC.png" class="logo" alt="Logo"/>
         <div class="menu">
-          <a href="steam://connect/5.188.148.84:31800">SERVER</a>
-          <a href="https://discord.gg/HGKv4DpRZu">DISCORD</a>
-          <a href="">MODS</a>
+          <a class="button--menu button--move" href="steam://connect/5.188.148.84:31800">SERVER</a>
+          <a class="button--menu button--move" href="https://discord.gg/HGKv4DpRZu">DISCORD</a>
+          <button class="button--menu" id="mods-button" href="">MODS</button>
         </div>
       </header>
     </head>
     <main class="main">
       <article class="banner">
-        <a href="steam://connect/5.188.148.84:31800" class="button">¡Juega con nosotros!</a>
+        <a id="button" href="steam://connect/5.188.148.84:31800" class="button show" >¡Juega con nosotros!</a>
         <img src="https://wallpaperset.com/w/full/0/a/3/371228.jpg" class="image" alt="Image"/>
         <div class="trackyserver">
-          <iframe src="https://api.trackyserver.com/widget/tracky.php?id=2248688&lang_code=es&map=1&version=1&votes=1&plist=1&connect=1&button_name=Conectar&color1=3D485E&color2=333333&color3=333333&color4=FFFFFF&color5=FFFFFF&color7=8A8E94&color8=8a8e94&color9=fff&title=Duendosos RP [ Early  Access]  V.1.2-0" width="540" height="200" allowtransparency="true" frameborder="0"></iframe>
-          <p class="trackyserver__info"> Server Wipe 04 08 2023 </p>
+          <iframe id="info"  src="https://api.trackyserver.com/widget/tracky.php?id=2248688&lang_code=es&map=1&version=1&votes=1&plist=1&connect=1&button_name=Conectar&color1=3D485E&color2=333333&color3=333333&color4=FFFFFF&color5=FFFFFF&color7=8A8E94&color8=8a8e94&color9=fff&title=Duendosos RP [ Early  Access]  V.1.2-0" width="540" height="200" allowtransparency="true" frameborder="0" class="show"></iframe>
+          <p id="tracky"  class="trackyserver__info show"> Server Wipe 04 08 2023 </p>
         </div>
       </article>
-      <div class="slider">
+      <div class="slider" id="slider" >
         <ul>
             <li>
                 <img src="./assets/images/pz1.png">
@@ -61,8 +61,126 @@
             </li>
         </ul>
     </div>
+    <section id="mods-list" class="mods hidde">
+      <ul class="list">
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2503622437">Skill Recovery Journal</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2986581203&searchtext=">Amputation</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3014820613">Automatic Gate Motors</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2616986064">Fuel Side Indicator</a>
+        <a href=" https://steamcommunity.com/sharedfiles/filedetails/?id=2849247394">Basements</a>
+        <a>Brita_2</a>
+        <a>Brita</a>
+        <a href="https://steamcommunity.com/workshop/filedetails/?id=2216760107">Profession Framework B41 Patch</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2368058459">Better Lock Picking</a>
+        <a href=" https://steamcommunity.com/workshop/filedetails/?id=2846831725">See Minimal Display Bars Incontinence</a>
+        <a href=" https://steamcommunity.com/sharedfiles/filedetails/?id=1436878551">Defecation</a>
+        <a href=" https://steamcommunity.com/sharedfiles/filedetails/?id=2708312917">Urination</a>
+        <a href=" https://steamcommunity.com/sharedfiles/filedetails/?id=2004998206">Minimal Display Bars</a>
+        <a href=" https://steamcommunity.com/sharedfiles/filedetails/?id=2508717129">Strong Walls</a>
+        <a href="https://steamcommunity.com/workshop/filedetails/?id=2760035814">UIAPI</a>
+        <a>zBoID RPC</a>
+        <a href=" https://steamcommunity.com/sharedfiles/filedetails/?id=2487022075">TMC_TrueActions</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2392709985">Tsarslib</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2774057398">Treads Paint Symbols</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2694358451">Valhalla Aegis</a>
+        <a>Valhalla Adjustments</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2818541726">Keep That Radio On</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3004111200&searchtext=">Zombies Hear Your Microphone</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2985394645">Take Any Amount</a>
+        <a href="https://steamcommunity.com/workshop/filedetails/?id=2241990680">Towing Car</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2282429356">Autotsar Trailers</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2292487242">H Tow Truck</a>
+
+      </ul>
+      <!-- <div class=" slider-container slider--mods">
+        <ul>
+            <li>
+                <img src="./assets/images//mods/mods (1).png">
+            </li>
+            <li>
+              <img src="./assets/images//mods/mods (2).png">
+          </li>
+          <li>
+            <img src="./assets/images//mods/mods (3).png">
+        </li>
+        <li>
+          <img src="./assets/images//mods/mods (4).png">
+      </li>
+      <li>
+        <img src="./assets/images//mods/mods (5).png">
+    </li>
+    <li>
+      <img src="./assets/images//mods/mods (6).png">
+  </li>
+  <li>
+    <img src="./assets/images//mods/mods (7).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (8).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (9).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (10).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (11).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (12).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (13).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (14).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (15).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (16).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (17).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (18).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (19).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (20).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (21).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (22).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (23).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (24).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (25).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (26).png">
+</li>
+<li>
+  <img src="./assets/images//mods/mods (27).png">
+</li>
+
+        </ul>
+    </div> -->
+    </section>
     </main>
-    <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/others/oth-9/oth829.ani), url(https://cur.cursors-4u.net/others/oth-9/oth829.png), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2012/02/05/zombie-hand-busy.html" target="_blank" title="Zombie Hand - Busy"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Zombie Hand - Busy" style="position:absolute; top: 0px; right: 0px;" /></a>
+    <!-- <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/others/oth-9/oth829.ani), url(https://cur.cursors-4u.net/others/oth-9/oth829.png), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2012/02/05/zombie-hand-busy.html" target="_blank" title="Zombie Hand - Busy"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Zombie Hand - Busy" style="position:absolute; top: 0px; right: 0px;" /></a> -->
     <script
       type="module"
       src="./js/index.js"
