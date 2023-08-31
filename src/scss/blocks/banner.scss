@@ -1,4 +1,12 @@
+@use '../mixins/responsive.scss' as *;
 .banner{
+ position: relative;
+ bottom:60px;
     //background-image:url(https://wallpaperset.com/w/full/0/a/3/371228.jpg)
     color:white;
+    @include responsive(desktop) {
+        top:100px;
+        bottom:0;
+    }
+  
 }

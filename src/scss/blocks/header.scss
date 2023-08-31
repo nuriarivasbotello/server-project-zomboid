@@ -1,8 +1,13 @@
+@use '../mixins/responsive.scss' as *;
 .header{
     display: flex; 
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding-top:40px;
     color:white;
     font-size: 20px;
+    @include responsive(desktop) {
+        flex-direction: row;
+    }
 }

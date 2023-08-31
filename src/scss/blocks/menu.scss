@@ -1,18 +1,31 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
 .menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top:30px;
-    padding-right:40px;
+    padding-top:60px;
     gap:30px;
     font-size:30px;
     font-family: var(--font);
+    @include responsive(desktop) {
+        padding-top:30px;
+    padding-right:40px;
+    }
 }
 .button--move{
-padding-top:10px;
+@include responsive(desktop) {
+    padding-top:0px;
+}
 }
 .button--menu{
     color:white;
     border:1px solid black;
 background-color: black;
+@include responsive(desktop) {
+    background-color: black;
+    @include hover {
+        color:red;
+    }
+}
 }

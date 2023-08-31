@@ -1,10 +1,26 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
 .button{
-    position: absolute;
-    top:400px;
-    left:420px;
+    width: 240px;
+    margin:auto;
+    position: relative;
+    top:125px;
     padding:30px 10px 30px 10px;
-    font-size: 40px;
+    font-size: 25px;
     border: 2px solid rgba(255, 255, 255, 0);
     border-radius: 0.5rem;
-    background-color: rgba(255, 0, 0, 0.522);
+    color:rgb(161, 0, 0);
+    background-color: rgba(228, 228, 228, 0.522);
+    @include responsive(desktop) {
+        width: auto;
+        position: absolute;
+    top:180px;
+    left:220px;
+    padding:30px 10px 30px 10px;
+    font-size: 40px;
+    @include hover {
+        background-color: rgba(255, 0, 0, 0.602);
+        color:white;
+    }
+    }
 }

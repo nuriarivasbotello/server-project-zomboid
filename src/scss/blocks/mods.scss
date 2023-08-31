@@ -1,3 +1,5 @@
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
 .show{
     display: flex;
 }
